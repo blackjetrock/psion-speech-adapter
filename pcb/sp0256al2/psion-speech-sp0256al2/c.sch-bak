@@ -1,0 +1,449 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 8
+Title "Psion Organiser 2 USB Adapter"
+Date ""
+Rev "1.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 2000 1050 2    50   Input ~ 0
+SD1
+Text GLabel 2000 1250 2    50   Input ~ 0
+SD3
+Text GLabel 1500 1150 0    50   Input ~ 0
+SD5
+Text GLabel 1500 950  0    50   Input ~ 0
+SD7
+Text GLabel 2000 1650 2    50   Input ~ 0
+SMR
+Text GLabel 1500 1650 0    50   Input ~ 0
+SOE
+Text GLabel 1500 1550 0    50   Input ~ 0
+SVCC
+Text GLabel 2000 1450 2    50   Input ~ 0
+SS
+Text GLabel 2000 1350 2    50   Input ~ 0
+SCLK
+Text GLabel 2000 950  2    50   Input ~ 0
+SD0
+Text GLabel 1500 1050 0    50   Input ~ 0
+SD6
+Text GLabel 1500 1250 0    50   Input ~ 0
+SD4
+Text GLabel 2000 1150 2    50   Input ~ 0
+SD2
+$Comp
+L power:GND #PWR?
+U 1 1 630F5E31
+P 1000 1700
+AR Path="/630EFC37/630F09C8/630F5E31" Ref="#PWR?"  Part="1" 
+AR Path="/630EFC37/630F5E31" Ref="#PWR024"  Part="1" 
+AR Path="/63410291/630F5E31" Ref="#PWR036"  Part="1" 
+F 0 "#PWR036" H 1000 1450 50  0001 C CNN
+F 1 "GND" H 1000 1525 50  0000 C CNN
+F 2 "" H 1000 1700 50  0001 C CNN
+F 3 "" H 1000 1700 50  0001 C CNN
+	1    1000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J?
+U 1 1 630F5E37
+P 1700 1250
+AR Path="/630EFC37/630F09C8/630F5E37" Ref="J?"  Part="1" 
+AR Path="/630EFC37/630F5E37" Ref="J2"  Part="1" 
+AR Path="/63410291/630F5E37" Ref="J4"  Part="1" 
+F 0 "J4" H 1750 1767 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 1750 1676 50  0000 C CNN
+F 2 "psion_org_2:Psion_datapak_2x08_P2.54mm_Horizontal" H 1700 1250 50  0001 C CNN
+F 3 "~" H 1700 1250 50  0001 C CNN
+	1    1700 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1350 1000 1350
+Wire Wire Line
+	1000 1350 1000 1700
+Text GLabel 2000 1550 2    50   Input ~ 0
+AC
+Text GLabel 1500 1450 0    50   Input ~ 0
+VB
+$Comp
+L 4xxx:4011 U?
+U 4 1 6311391A
+P 6250 5050
+AR Path="/6311391A" Ref="U?"  Part="1" 
+AR Path="/630EFC37/6311391A" Ref="U5"  Part="4" 
+AR Path="/63410291/6311391A" Ref="U11"  Part="4" 
+F 0 "U11" H 6250 5375 50  0000 C CNN
+F 1 "4011" H 6250 5284 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6250 5050 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 6250 5050 50  0001 C CNN
+	4    6250 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC244 U?
+U 1 1 6311B023
+P 3025 6125
+AR Path="/6311B023" Ref="U?"  Part="1" 
+AR Path="/62ED18DC/6311B023" Ref="U?"  Part="1" 
+AR Path="/630EFC37/6311B023" Ref="U7"  Part="1" 
+AR Path="/63410291/6311B023" Ref="U10"  Part="1" 
+F 0 "U10" H 3025 7106 50  0000 C CNN
+F 1 "74HC244" H 3025 7015 50  0000 C CNN
+F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 3025 6125 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT244.pdf" H 3025 6125 50  0001 C CNN
+	1    3025 6125
+	1    0    0    -1  
+$EndComp
+Text GLabel 8225 4300 2    50   Input ~ 0
+ROMCE
+$Comp
+L 4xxx:4011 U?
+U 3 1 631A382A
+P 6250 4200
+AR Path="/631A382A" Ref="U?"  Part="1" 
+AR Path="/630EFC37/631A382A" Ref="U5"  Part="3" 
+AR Path="/63410291/631A382A" Ref="U11"  Part="3" 
+F 0 "U11" H 6250 4525 50  0000 C CNN
+F 1 "4011" H 6250 4434 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6250 4200 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 6250 4200 50  0001 C CNN
+	3    6250 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4011 U?
+U 1 1 631A42EB
+P 7575 5225
+AR Path="/631A42EB" Ref="U?"  Part="1" 
+AR Path="/630EFC37/631A42EB" Ref="U5"  Part="1" 
+AR Path="/63410291/631A42EB" Ref="U11"  Part="1" 
+F 0 "U11" H 7575 5550 50  0000 C CNN
+F 1 "4011" H 7575 5459 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7575 5225 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 7575 5225 50  0001 C CNN
+	1    7575 5225
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4011 U?
+U 2 1 631A4861
+P 7575 4300
+AR Path="/631A4861" Ref="U?"  Part="1" 
+AR Path="/630EFC37/631A4861" Ref="U5"  Part="2" 
+AR Path="/63410291/631A4861" Ref="U11"  Part="2" 
+F 0 "U11" H 7575 4625 50  0000 C CNN
+F 1 "4011" H 7575 4534 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7575 4300 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 7575 4300 50  0001 C CNN
+	2    7575 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7875 4300 8050 4300
+$Comp
+L Device:R_Small R34
+U 1 1 631AE156
+P 8050 4000
+F 0 "R34" H 8109 4046 50  0000 L CNN
+F 1 "47k" H 8109 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8050 4000 50  0001 C CNN
+F 3 "~" H 8050 4000 50  0001 C CNN
+	1    8050 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4100 8050 4300
+Connection ~ 8050 4300
+Wire Wire Line
+	8050 4300 8225 4300
+Text GLabel 8100 3600 2    50   Input ~ 0
++5V_LOGIC
+Wire Wire Line
+	8100 3600 8050 3600
+Wire Wire Line
+	8050 3600 8050 3900
+Wire Wire Line
+	6550 4200 7275 4200
+Text GLabel 5800 3625 0    50   Input ~ 0
++5V_LOGIC
+Wire Wire Line
+	5800 3625 5950 3625
+Wire Wire Line
+	5950 3625 5950 4100
+Wire Wire Line
+	6550 5050 6675 5050
+Wire Wire Line
+	6675 5050 6675 4400
+Wire Wire Line
+	6675 4400 7275 4400
+Wire Wire Line
+	6675 5050 6675 5325
+Wire Wire Line
+	6675 5325 7275 5325
+Connection ~ 6675 5050
+Text GLabel 7275 5125 0    50   Input ~ 0
+SOE
+Text GLabel 5950 5150 0    50   Input ~ 0
++5V_LOGIC
+Text GLabel 4775 4950 0    50   Input ~ 0
+SS
+$Comp
+L Device:D_Schottky D8
+U 1 1 631C3D40
+P 5050 4950
+F 0 "D8" H 5050 5167 50  0000 C CNN
+F 1 "SS36/Schottky" H 5050 5076 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 5050 4950 50  0001 C CNN
+F 3 "~" H 5050 4950 50  0001 C CNN
+	1    5050 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4775 4950 4900 4950
+$Comp
+L Device:R_Small R33
+U 1 1 631C6F62
+P 5425 4700
+F 0 "R33" H 5484 4746 50  0000 L CNN
+F 1 "4k7" H 5484 4655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5425 4700 50  0001 C CNN
+F 3 "~" H 5425 4700 50  0001 C CNN
+	1    5425 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4950 5425 4950
+Wire Wire Line
+	5425 4800 5425 4950
+Connection ~ 5425 4950
+Wire Wire Line
+	5425 4950 5200 4950
+Text GLabel 5275 4325 0    50   Input ~ 0
++5V_LOGIC
+Wire Wire Line
+	5275 4325 5425 4325
+Wire Wire Line
+	5425 4325 5425 4600
+Text Notes 6700 4950 0    50   ~ 0
+N_SS
+Text GLabel 5950 4300 0    50   Input ~ 0
+SOE
+Text Notes 6750 4175 0    50   ~ 0
+N_SOE\n
+Text GLabel 7875 5225 2    50   Input ~ 0
+244_OE
+Text Notes 8750 4325 0    50   ~ 0
+SS LOW AND SOE LOW 
+Text Notes 8450 5250 0    50   ~ 0
+SS LOW AND SOE HIGH
+Text GLabel 1925 6525 0    50   Input ~ 0
+244_OE
+Wire Wire Line
+	2525 6525 2275 6525
+Wire Wire Line
+	2525 6625 2275 6625
+Wire Wire Line
+	2275 6625 2275 6525
+Connection ~ 2275 6525
+Wire Wire Line
+	2275 6525 1925 6525
+$Comp
+L power:GND #PWR?
+U 1 1 631D0A1C
+P 3025 7075
+AR Path="/630EFC37/630F09C8/631D0A1C" Ref="#PWR?"  Part="1" 
+AR Path="/630EFC37/631D0A1C" Ref="#PWR025"  Part="1" 
+AR Path="/63410291/631D0A1C" Ref="#PWR037"  Part="1" 
+F 0 "#PWR037" H 3025 6825 50  0001 C CNN
+F 1 "GND" H 3025 6900 50  0000 C CNN
+F 2 "" H 3025 7075 50  0001 C CNN
+F 3 "" H 3025 7075 50  0001 C CNN
+	1    3025 7075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3025 6925 3025 7075
+Text GLabel 2825 4975 0    50   Input ~ 0
++5V_LOGIC
+Wire Wire Line
+	2825 4975 3025 4975
+Wire Wire Line
+	3025 4975 3025 5325
+$Comp
+L Device:R_Small R29
+U 1 1 631D89A5
+P 1575 5625
+F 0 "R29" H 1634 5671 50  0000 L CNN
+F 1 "4k7" H 1634 5580 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1575 5625 50  0001 C CNN
+F 3 "~" H 1575 5625 50  0001 C CNN
+	1    1575 5625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R28
+U 1 1 631D8D9B
+P 1325 5625
+F 0 "R28" H 1384 5671 50  0000 L CNN
+F 1 "4k7" H 1384 5580 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1325 5625 50  0001 C CNN
+F 3 "~" H 1325 5625 50  0001 C CNN
+	1    1325 5625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R27
+U 1 1 631D9274
+P 1075 5625
+F 0 "R27" H 1134 5671 50  0000 L CNN
+F 1 "4k7" H 1134 5580 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1075 5625 50  0001 C CNN
+F 3 "~" H 1075 5625 50  0001 C CNN
+	1    1075 5625
+	1    0    0    -1  
+$EndComp
+Text GLabel 950  5150 0    50   Input ~ 0
++5V_LOGIC
+Wire Wire Line
+	950  5150 1075 5150
+Wire Wire Line
+	1575 5150 1575 5525
+Wire Wire Line
+	1325 5525 1325 5150
+Connection ~ 1325 5150
+Wire Wire Line
+	1325 5150 1575 5150
+Wire Wire Line
+	1075 5525 1075 5150
+Connection ~ 1075 5150
+Wire Wire Line
+	1075 5150 1325 5150
+Wire Wire Line
+	1575 5825 1575 5725
+Wire Wire Line
+	1575 5825 2525 5825
+Wire Wire Line
+	2525 5925 1325 5925
+Wire Wire Line
+	1325 5925 1325 5725
+Wire Wire Line
+	2525 6325 1075 6325
+Wire Wire Line
+	1075 6325 1075 5725
+Text GLabel 2525 6225 0    50   Input ~ 0
+TXD
+Text GLabel 4025 5625 2    50   Input ~ 0
+RXD
+Wire Wire Line
+	3525 5625 3850 5625
+$Comp
+L Device:R_Small R32
+U 1 1 631E2D04
+P 3850 5325
+F 0 "R32" H 3909 5371 50  0000 L CNN
+F 1 "4k7" H 3950 5250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3850 5325 50  0001 C CNN
+F 3 "~" H 3850 5325 50  0001 C CNN
+	1    3850 5325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 5225 3850 4975
+Wire Wire Line
+	3850 4975 3675 4975
+Connection ~ 3025 4975
+Wire Wire Line
+	3850 5425 3850 5625
+Connection ~ 3850 5625
+Wire Wire Line
+	3850 5625 4025 5625
+Text GLabel 2525 6125 0    50   Input ~ 0
+RTS
+$Comp
+L Device:D_Schottky D7
+U 1 1 631E701D
+P 1875 6025
+F 0 "D7" H 1775 5925 50  0000 C CNN
+F 1 "D_Schottky" H 1850 5850 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 1875 6025 50  0001 C CNN
+F 3 "~" H 1875 6025 50  0001 C CNN
+	1    1875 6025
+	1    0    0    -1  
+$EndComp
+Text GLabel 1725 6025 0    50   Input ~ 0
+AC
+Wire Wire Line
+	2525 6025 2125 6025
+$Comp
+L Device:R_Small R30
+U 1 1 631E9F1A
+P 2125 5550
+F 0 "R30" H 2184 5596 50  0000 L CNN
+F 1 "47k" H 2184 5505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2125 5550 50  0001 C CNN
+F 3 "~" H 2125 5550 50  0001 C CNN
+	1    2125 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1575 5150 2125 5150
+Wire Wire Line
+	2125 5150 2125 5450
+Connection ~ 1575 5150
+Wire Wire Line
+	2125 5650 2125 6025
+Connection ~ 2125 6025
+Wire Wire Line
+	2125 6025 2025 6025
+Text GLabel 4050 5725 2    50   Input ~ 0
+CTS
+$Comp
+L Device:R_Small R31
+U 1 1 631EDF7E
+P 3675 5325
+F 0 "R31" H 3475 5350 50  0000 L CNN
+F 1 "4k7" H 3475 5250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3675 5325 50  0001 C CNN
+F 3 "~" H 3675 5325 50  0001 C CNN
+	1    3675 5325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3675 5225 3675 4975
+Connection ~ 3675 4975
+Wire Wire Line
+	3675 4975 3025 4975
+Wire Wire Line
+	3525 5725 3675 5725
+Wire Wire Line
+	3675 5425 3675 5725
+Connection ~ 3675 5725
+Wire Wire Line
+	3675 5725 4050 5725
+Text GLabel 3525 5825 2    50   Input ~ 0
+SD7
+Text GLabel 3525 5925 2    50   Input ~ 0
+SD6
+Text GLabel 2525 5725 0    50   Input ~ 0
+SD0
+Text GLabel 3525 6025 2    50   Input ~ 0
+SD1
+Text GLabel 3525 6125 2    50   Input ~ 0
+SD2
+Text GLabel 3525 6225 2    50   Input ~ 0
+SD3
+Text GLabel 2525 5625 0    50   Input ~ 0
+SD4
+Text GLabel 3525 6325 2    50   Input ~ 0
+SD5
+$EndSCHEMATC
