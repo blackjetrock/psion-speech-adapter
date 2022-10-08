@@ -283,17 +283,6 @@ Wire Wire Line
 	8625 1775 8850 1775
 Wire Wire Line
 	8850 1775 8850 1850
-$Comp
-L Connector:Conn_01x02_Female J2
-U 1 1 6342C3EE
-P 9850 1575
-F 0 "J2" H 9878 1551 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 9878 1460 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9850 1575 50  0001 C CNN
-F 3 "~" H 9850 1575 50  0001 C CNN
-	1    9850 1575
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9650 1575 9375 1575
 Connection ~ 9375 1575
@@ -898,4 +887,17 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	5    10200 5825
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Speaker LS1
+U 1 1 63412366
+P 9850 1575
+F 0 "LS1" H 10020 1571 50  0000 L CNN
+F 1 "Speaker" H 10020 1480 50  0000 L CNN
+F 2 "" H 9850 1375 50  0001 C CNN
+F 3 "~" H 9840 1525 50  0001 C CNN
+	1    9850 1575
+	1    0    0    -1  
+$EndComp
+Text Notes 9900 2100 0    50   ~ 0
+PB mounted speaker can be a\nwired sounder of\nsome other type.
 $EndSCHEMATC
