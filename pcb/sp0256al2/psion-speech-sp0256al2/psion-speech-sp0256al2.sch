@@ -30,7 +30,7 @@ U 1 1 633FDF7B
 P 4300 1625
 F 0 "Y1" V 4254 1756 50  0000 L CNN
 F 1 "3.2768MHz" V 4345 1756 50  0000 L CNN
-F 2 "" H 4300 1625 50  0001 C CNN
+F 2 "psion_org_2:crystal_um4s" H 4300 1625 50  0001 C CNN
 F 3 "~" H 4300 1625 50  0001 C CNN
 	1    4300 1625
 	1    0    0    -1  
@@ -232,7 +232,7 @@ P 8525 1575
 AR Path="/63403785/63427936" Ref="FB?"  Part="1" 
 AR Path="/63427936" Ref="FB2"  Part="1" 
 F 0 "FB2" V 8375 1575 50  0000 C CNN
-F 1 "Laird Technologies Part # MI0805K400R-10" V 8025 2300 50  0000 C CNN
+F 1 "Laird Technologies Part # MI0805K400R-10" V 7600 1325 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" V 8455 1575 50  0001 C CNN
 F 3 "~" H 8525 1575 50  0001 C CNN
 	1    8525 1575
@@ -283,13 +283,7 @@ Wire Wire Line
 	8625 1775 8850 1775
 Wire Wire Line
 	8850 1775 8850 1850
-Wire Wire Line
-	9650 1575 9375 1575
 Connection ~ 9375 1575
-Wire Wire Line
-	9650 1675 9650 1775
-Wire Wire Line
-	9650 1775 8850 1775
 Wire Wire Line
 	9375 1575 9375 1850
 Connection ~ 8850 1775
@@ -471,12 +465,6 @@ F 3 "~" H 6125 1225 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6125 1325 6125 1425
-Wire Wire Line
-	4875 2550 5375 2550
-Wire Wire Line
-	5375 2550 5375 750 
-Wire Wire Line
-	5375 750  6125 750 
 Wire Wire Line
 	6125 750  6125 1125
 Connection ~ 4875 2550
@@ -741,33 +729,33 @@ Wire Wire Line
 $Comp
 L Device:C_Small C11
 U 1 1 6348419A
-P 10650 1200
-F 0 "C11" H 10742 1246 50  0000 L CNN
-F 1 "10uF" H 10742 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder" H 10650 1200 50  0001 C CNN
-F 3 "~" H 10650 1200 50  0001 C CNN
-	1    10650 1200
+P 6950 2575
+F 0 "C11" H 7042 2621 50  0000 L CNN
+F 1 "10uF" H 7042 2530 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder" H 6950 2575 50  0001 C CNN
+F 3 "~" H 6950 2575 50  0001 C CNN
+	1    6950 2575
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR014
 U 1 1 63484BC1
-P 10650 1425
-F 0 "#PWR014" H 10650 1175 50  0001 C CNN
-F 1 "GND" H 10655 1252 50  0000 C CNN
-F 2 "" H 10650 1425 50  0001 C CNN
-F 3 "" H 10650 1425 50  0001 C CNN
-	1    10650 1425
+P 6950 2800
+F 0 "#PWR014" H 6950 2550 50  0001 C CNN
+F 1 "GND" H 6955 2627 50  0000 C CNN
+F 2 "" H 6950 2800 50  0001 C CNN
+F 3 "" H 6950 2800 50  0001 C CNN
+	1    6950 2800
 	1    0    0    -1  
 $EndComp
-Text GLabel 10600 925  0    50   Input ~ 0
+Text GLabel 6900 2300 0    50   Input ~ 0
 SVCC
 Wire Wire Line
-	10600 925  10650 925 
+	6900 2300 6950 2300
 Wire Wire Line
-	10650 925  10650 1100
+	6950 2300 6950 2475
 Wire Wire Line
-	10650 1300 10650 1425
+	6950 2675 6950 2800
 Text GLabel 2050 4150 2    50   Input ~ 0
 SD1
 Text GLabel 2050 4350 2    50   Input ~ 0
@@ -887,17 +875,51 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	5    10200 5825
 	1    0    0    -1  
 $EndComp
+Text Notes 7950 1050 0    50   ~ 0
+PB mounted speaker can be a\nwired sounder of\nsome other type.
 $Comp
-L Device:Speaker LS1
-U 1 1 63412366
-P 9850 1575
-F 0 "LS1" H 10020 1571 50  0000 L CNN
-F 1 "Speaker" H 10020 1480 50  0000 L CNN
-F 2 "" H 9850 1375 50  0001 C CNN
-F 3 "~" H 9840 1525 50  0001 C CNN
-	1    9850 1575
+L Connector:AudioJack2_Ground_Switch J2
+U 1 1 6343E58B
+P 5750 2550
+F 0 "J2" H 5570 2568 50  0000 R CNN
+F 1 "AudioJack2_Ground_Switch" H 5570 2477 50  0000 R CNN
+F 2 "" H 5750 2750 50  0001 C CNN
+F 3 "~" H 5750 2750 50  0001 C CNN
+	1    5750 2550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9375 1575 9850 1575
+Wire Wire Line
+	9850 1675 9750 1675
+Wire Wire Line
+	9750 1675 9750 1775
+Wire Wire Line
+	8850 1775 9750 1775
+Wire Wire Line
+	4875 2550 5325 2550
+Wire Wire Line
+	5325 2550 5325 2350
+Wire Wire Line
+	5325 2350 5550 2350
+Connection ~ 5325 2550
+Wire Wire Line
+	5325 2550 5550 2550
+Wire Wire Line
+	5250 2450 5250 750 
+Wire Wire Line
+	5250 750  6125 750 
+Wire Wire Line
+	5250 2450 5550 2450
+$Comp
+L Connector:Conn_01x02_Female J4
+U 1 1 634738A3
+P 10050 1575
+F 0 "J4" H 10078 1551 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10078 1460 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10050 1575 50  0001 C CNN
+F 3 "~" H 10050 1575 50  0001 C CNN
+	1    10050 1575
 	1    0    0    -1  
 $EndComp
-Text Notes 9900 2100 0    50   ~ 0
-PB mounted speaker can be a\nwired sounder of\nsome other type.
 $EndSCHEMATC

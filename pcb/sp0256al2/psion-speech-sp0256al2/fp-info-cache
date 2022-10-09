@@ -1,4 +1,4 @@
--9204283351611380647
+-9204278357947656647
 8wTermBlk
 8wTermBlk
 
@@ -83426,7 +83426,21 @@ truconnect-20-0138-mono-socket
 5
 5
 psion_org_2
+30mm_sounder
+
+
+0
+2
+2
+psion_org_2
 Psion_datapak_2x08_P2.54mm_Horizontal
+Through hole angled pin header, 2x08, 2.54mm pitch, 6mm pin length, double rows Psion2 Datapak
+Through hole angled pin header THT 2x08 2.54mm double row
+0
+16
+16
+psion_org_2
+Psion_datapak_2x08_P2.54mm_Vertical_top_slot
 Through hole angled pin header, 2x08, 2.54mm pitch, 6mm pin length, double rows Psion2 Datapak
 Through hole angled pin header THT 2x08 2.54mm double row
 0
@@ -83439,6 +83453,13 @@ solder jumper open
 0
 2
 2
+psion_org_2
+crystal_um4s
+
+
+0
+3
+3
 rp2040
 Crystal_SMD_HC49-US
 SMD Crystal HC-49-SD http://cdn-reichelt.de/documents/datenblatt/B400/xxx-HC49-SMD.pdf, 11.4x4.7mm^2 package
