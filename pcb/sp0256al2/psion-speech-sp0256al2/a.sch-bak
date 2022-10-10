@@ -302,56 +302,6 @@ Wire Wire Line
 	4550 775  4350 775 
 Text GLabel 9950 3825 2    50   Input ~ 0
 +5V_LOGIC
-Text GLabel 7400 4450 0    50   Input ~ 0
-+5V
-Text GLabel 7400 4750 0    50   Input ~ 0
-+5V_SWITCHED
-Text GLabel 9975 4450 2    50   Input ~ 0
-+5V_PSION
-$Comp
-L Device:Jumper_NO_Small JP7
-U 1 1 62F07812
-P 8200 3825
-F 0 "JP7" H 8200 3900 50  0000 C CNN
-F 1 "5V_to_logic" H 8200 3750 50  0000 C CNN
-F 2 "psion_org_2:SolderJumper-2_P1.3mm_Open_Pad0.8x0.8mm" H 8200 3825 50  0001 C CNN
-F 3 "~" H 8200 3825 50  0001 C CNN
-	1    8200 3825
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper_NO_Small JP8
-U 1 1 62F0854D
-P 8200 4450
-F 0 "JP8" H 8200 4525 50  0000 C CNN
-F 1 "5V_to_Psion" H 8225 4375 50  0000 C CNN
-F 2 "psion_org_2:SolderJumper-2_P1.3mm_Open_Pad0.8x0.8mm" H 8200 4450 50  0001 C CNN
-F 3 "~" H 8200 4450 50  0001 C CNN
-	1    8200 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper_NO_Small JP9
-U 1 1 62F087A5
-P 8225 4750
-F 0 "JP9" H 8200 4825 50  0000 C CNN
-F 1 "5V_switched_to_Psion" H 8200 4650 50  0000 C CNN
-F 2 "psion_org_2:SolderJumper-2_P1.3mm_Open_Pad0.8x0.8mm" H 8225 4750 50  0001 C CNN
-F 3 "~" H 8225 4750 50  0001 C CNN
-	1    8225 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 3825 8100 3825
-Wire Wire Line
-	9975 4450 8675 4450
-Wire Wire Line
-	8325 4750 8675 4750
-Wire Wire Line
-	8675 4750 8675 4450
-Connection ~ 8675 4450
-Wire Wire Line
-	8675 4450 8300 4450
 Text GLabel 3950 3425 0    50   Input ~ 0
 +5V_LOGIC
 Text GLabel 3950 3725 0    50   Input ~ 0
@@ -602,16 +552,12 @@ F 3 "~" H 7250 5400 50  0001 C CNN
 	1    7250 5400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7400 4450 8100 4450
-Wire Wire Line
-	8300 3825 9950 3825
 Text GLabel 7800 3825 0    50   Input ~ 0
 SVCC
-Wire Wire Line
-	7400 4750 8125 4750
 Text GLabel 3675 3225 0    50   Input ~ 0
 +5V_LOGIC
 Wire Wire Line
 	3950 3225 3675 3225
+Wire Wire Line
+	7800 3825 9950 3825
 $EndSCHEMATC

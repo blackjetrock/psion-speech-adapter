@@ -278,7 +278,7 @@ JP2:Leave open until ready to test the \nsupply to the Psion
 Text Notes 1125 1650 0    50   ~ 0
 Power supply for psion. This feeds into VB on the psion connector (if jumpers\nare set up that way). The Psion is then powered by a step-up conversion \nfrom the 5V of the USB connector.
 Text GLabel 1575 2375 0    50   Input ~ 0
-+5V_PSION
+5VUSB
 $Comp
 L Device:R_Small R?
 U 1 1 6320ACB0
