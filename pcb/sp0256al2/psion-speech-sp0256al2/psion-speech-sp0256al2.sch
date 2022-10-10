@@ -360,7 +360,7 @@ U 1 1 6343A80C
 P 6125 1575
 F 0 "RV1" H 6056 1621 50  0000 R CNN
 F 1 "10k" H 6056 1530 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 6125 1575 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 6125 1575 50  0001 C CNN
 F 3 "~" H 6125 1575 50  0001 C CNN
 	1    6125 1575
 	1    0    0    -1  
@@ -883,7 +883,7 @@ U 1 1 6343E58B
 P 5750 2550
 F 0 "J2" H 5570 2568 50  0000 R CNN
 F 1 "AudioJack2_Ground_Switch" H 5570 2477 50  0000 R CNN
-F 2 "" H 5750 2750 50  0001 C CNN
+F 2 "psion_org_2:truconnect_stereo_audio_5_pin" H 5750 2750 50  0001 C CNN
 F 3 "~" H 5750 2750 50  0001 C CNN
 	1    5750 2550
 	-1   0    0    -1  
@@ -920,6 +920,17 @@ F 1 "Conn_01x02_Female" H 10078 1460 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10050 1575 50  0001 C CNN
 F 3 "~" H 10050 1575 50  0001 C CNN
 	1    10050 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6348B625
+P 5750 2850
+F 0 "#PWR0102" H 5750 2600 50  0001 C CNN
+F 1 "GND" H 5755 2677 50  0000 C CNN
+F 2 "" H 5750 2850 50  0001 C CNN
+F 3 "" H 5750 2850 50  0001 C CNN
+	1    5750 2850
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
