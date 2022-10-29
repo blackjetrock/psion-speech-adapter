@@ -1,0 +1,6 @@
+Psion Speech Adapter V1.0 Errata
+================================
+
+1. Headphone socket pin holes too small.
+2. U2 footprint is 14pin not 16
+
