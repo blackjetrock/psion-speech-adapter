@@ -199,7 +199,7 @@ Wire Wire Line
 Wire Wire Line
 	2225 5350 2225 6225
 $Sheet
-S 5450 5700 1200 625 
+S 3625 5250 1200 625 
 U 6340FD7B
 F0 "Psion ROM" 50
 F1 "a.sch" 50
@@ -583,51 +583,19 @@ Text GLabel 1875 2975 0    50   Input ~ 0
 SD4
 Text GLabel 1875 2875 0    50   Input ~ 0
 SD5
-$Comp
-L 74xx_IEEE:74LS368 U2
-U 1 1 63421380
-P 6450 4050
-F 0 "U2" H 6450 4616 50  0000 C CNN
-F 1 "74LS368" H 6450 4525 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6450 4050 50  0001 C CNN
-F 3 "" H 6450 4050 50  0001 C CNN
-	1    6450 4050
-	1    0    0    -1  
-$EndComp
-Text GLabel 7000 4650 2    50   Input ~ 0
+Text GLabel 8450 5225 2    50   Input ~ 0
 SD7
-Wire Wire Line
-	5900 4650 5625 4650
-Wire Wire Line
-	5625 4650 5625 4950
-Wire Wire Line
-	5625 4950 7000 4950
-Wire Wire Line
-	7000 4950 7000 4750
-Text GLabel 5900 4750 0    50   Input ~ 0
+Text GLabel 7450 5325 0    50   Input ~ 0
 LRQ
-$Comp
-L power:GND #PWR08
-U 1 1 634277F0
-P 5400 3800
-F 0 "#PWR08" H 5400 3550 50  0001 C CNN
-F 1 "GND" H 5405 3627 50  0000 C CNN
-F 2 "" H 5400 3800 50  0001 C CNN
-F 3 "" H 5400 3800 50  0001 C CNN
-	1    5400 3800
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 3800 5400 3800
-Text GLabel 5900 3950 0    50   Input ~ 0
+Text GLabel 7450 4825 0    50   Input ~ 0
 SS
-Text GLabel 5900 4150 0    50   Input ~ 0
+Text GLabel 7450 5025 0    50   Input ~ 0
 SOE
-Text GLabel 7000 3950 2    50   Input ~ 0
+Text GLabel 8450 4825 2    50   Input ~ 0
 N_SS
-Text GLabel 7000 4150 2    50   Input ~ 0
+Text GLabel 8450 5025 2    50   Input ~ 0
 N_SOE
-Text GLabel 10350 5200 2    50   Input ~ 0
+Text GLabel 8100 4150 2    50   Input ~ 0
 SVCC
 Wire Wire Line
 	10350 5200 10200 5200
@@ -673,9 +641,9 @@ Wire Wire Line
 Connection ~ 9575 4825
 Wire Wire Line
 	9575 4825 9875 4825
-Text GLabel 5900 4250 0    50   Input ~ 0
+Text GLabel 6850 5125 0    50   Input ~ 0
 SEL_SOE_1
-Text GLabel 7000 4250 2    50   Input ~ 0
+Text GLabel 8450 5125 2    50   Input ~ 0
 NOT_SEL_SOE_1
 Text GLabel 10475 4725 2    50   Input ~ 0
 RST
@@ -933,6 +901,51 @@ F 3 "" H 5750 2850 50  0001 C CNN
 	1    5750 2850
 	1    0    0    -1  
 $EndComp
+$Comp
+L 74xx:74LS368 U5
+U 1 1 6360F2CE
+P 7950 5225
+F 0 "U5" H 8250 6100 50  0000 C CNN
+F 1 "74LS368" H 8375 6025 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 7950 5225 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS368" H 7950 5225 50  0001 C CNN
+	1    7950 5225
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6450 3700 6600 3700
+	8450 5325 8725 5325
+Wire Wire Line
+	8725 5325 8725 6425
+Wire Wire Line
+	8725 6425 7050 6425
+Wire Wire Line
+	7050 6425 7050 5225
+Wire Wire Line
+	7050 5225 7450 5225
+$Comp
+L power:GND #PWR0103
+U 1 1 6361864B
+P 7950 6075
+F 0 "#PWR0103" H 7950 5825 50  0001 C CNN
+F 1 "GND" H 7955 5902 50  0000 C CNN
+F 2 "" H 7950 6075 50  0001 C CNN
+F 3 "" H 7950 6075 50  0001 C CNN
+	1    7950 6075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 6075 7950 5925
+Wire Wire Line
+	7950 4150 8100 4150
+Wire Wire Line
+	7950 4150 7950 4525
+Wire Wire Line
+	7450 5125 7150 5125
+Wire Wire Line
+	7150 5625 7450 5625
+Wire Wire Line
+	7150 5125 7150 5625
+Connection ~ 7150 5125
+Wire Wire Line
+	7150 5125 6850 5125
 $EndSCHEMATC

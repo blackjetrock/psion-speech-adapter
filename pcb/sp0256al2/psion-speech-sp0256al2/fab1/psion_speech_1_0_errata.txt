@@ -3,4 +3,8 @@ Psion Speech Adapter V1.0 Errata
 
 1. Headphone socket pin holes too small.
 2. U2 footprint is 14pin not 16
+3. U2 pin 15 not conn
+4. U2 pin 8 nc
+5. U2 pin 16 nc
+6. U8 (ROM) pin 22 (CE) not connected.
 

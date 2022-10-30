@@ -295,17 +295,13 @@ $EndComp
 Wire Wire Line
 	4550 3900 4550 3825
 Text GLabel 4350 775  0    50   Input ~ 0
-+5V_LOGIC
+SVCC
 Wire Wire Line
 	4550 1325 4550 775 
 Wire Wire Line
 	4550 775  4350 775 
-Text GLabel 9950 3825 2    50   Input ~ 0
-+5V_LOGIC
 Text GLabel 3950 3425 0    50   Input ~ 0
-+5V_LOGIC
-Text GLabel 3950 3725 0    50   Input ~ 0
-SOE
+SVCC
 Wire Wire Line
 	8025 1425 5800 1425
 Connection ~ 5800 1425
@@ -357,9 +353,9 @@ F 3 "" H 2150 2175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1950 1225 0    50   Input ~ 0
-+5V_LOGIC
+SVCC
 Text GLabel 1100 2400 0    50   Input ~ 0
-+5V_LOGIC
+SVCC
 Wire Wire Line
 	2150 1225 2150 1475
 Wire Wire Line
@@ -406,8 +402,6 @@ Wire Wire Line
 	1600 2800 1175 2800
 Wire Wire Line
 	2700 2500 2900 2500
-Text GLabel 3950 3625 0    50   Input ~ 0
-ROMCE
 Wire Wire Line
 	1950 1225 2150 1225
 Wire Wire Line
@@ -497,7 +491,7 @@ $EndComp
 Wire Wire Line
 	8900 5100 9100 5100
 Text GLabel 9100 5100 2    50   Input ~ 0
-+5V_LOGIC
+SVCC
 Connection ~ 8900 5400
 Wire Wire Line
 	8900 5100 8900 5400
@@ -552,12 +546,12 @@ F 3 "~" H 7250 5400 50  0001 C CNN
 	1    7250 5400
 	1    0    0    -1  
 $EndComp
-Text GLabel 7800 3825 0    50   Input ~ 0
-SVCC
 Text GLabel 3675 3225 0    50   Input ~ 0
-+5V_LOGIC
+SVCC
 Wire Wire Line
 	3950 3225 3675 3225
-Wire Wire Line
-	7800 3825 9950 3825
+Text GLabel 3950 3725 0    50   Input ~ 0
+SOE
+Text GLabel 3950 3625 0    50   Input ~ 0
+SEL_SOE_0
 $EndSCHEMATC

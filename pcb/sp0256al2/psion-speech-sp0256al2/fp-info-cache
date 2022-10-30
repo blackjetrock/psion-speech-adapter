@@ -1,4 +1,4 @@
--9204278357947656647
+-9204276692573193647
 8wTermBlk
 8wTermBlk
 
@@ -83460,6 +83460,13 @@ crystal_um4s
 0
 3
 3
+psion_org_2
+truconnect_stereo_audio_5_pin
+
+
+0
+5
+5
 rp2040
 Crystal_SMD_HC49-US
 SMD Crystal HC-49-SD http://cdn-reichelt.de/documents/datenblatt/B400/xxx-HC49-SMD.pdf, 11.4x4.7mm^2 package
