@@ -567,7 +567,7 @@ Wire Wire Line
 	1575 2675 1575 2575
 Connection ~ 1575 2575
 Wire Wire Line
-	1575 3225 1575 2675
+	1575 3225 1575 3150
 Connection ~ 1575 2675
 Text GLabel 3475 2575 2    50   Input ~ 0
 SVCC
@@ -657,18 +657,11 @@ Text GLabel 3175 1975 2    50   Input ~ 0
 RST
 Wire Wire Line
 	3175 2575 3425 2575
-Wire Wire Line
-	3425 2575 3425 2275
-Wire Wire Line
-	3425 2275 3175 2275
 Connection ~ 3425 2575
 Wire Wire Line
 	3425 2575 3475 2575
 Wire Wire Line
-	3425 2275 3425 2175
-Wire Wire Line
 	3425 2175 3175 2175
-Connection ~ 3425 2275
 $Comp
 L Device:C_Small C10
 U 1 1 63476702
@@ -907,7 +900,7 @@ U 1 1 6360F2CE
 P 7950 5225
 F 0 "U5" H 8250 6100 50  0000 C CNN
 F 1 "74LS368" H 8375 6025 50  0000 C CNN
-F 2 "" H 7950 5225 50  0001 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 7950 5225 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS368" H 7950 5225 50  0001 C CNN
 	1    7950 5225
 	1    0    0    -1  
@@ -934,7 +927,7 @@ F 3 "" H 7950 6075 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7950 6075 7950 5925
+	7950 6075 7950 5975
 Wire Wire Line
 	7950 4150 8100 4150
 Wire Wire Line
@@ -948,4 +941,58 @@ Wire Wire Line
 Connection ~ 7150 5125
 Wire Wire Line
 	7150 5125 6850 5125
+Wire Wire Line
+	7950 5975 7300 5975
+Wire Wire Line
+	7300 5975 7300 5525
+Wire Wire Line
+	7300 5525 7450 5525
+Connection ~ 7950 5975
+Wire Wire Line
+	7950 5975 7950 5925
+Wire Wire Line
+	3425 2175 3425 2575
+Wire Wire Line
+	3175 2275 3875 2275
+Wire Wire Line
+	3875 2275 3875 3150
+Wire Wire Line
+	3875 3150 1575 3150
+Connection ~ 1575 3150
+Wire Wire Line
+	1575 3150 1575 2675
+Text Notes 7375 3225 0    50   ~ 0
+SEL_SOE_0          SS=0   SOE=0\nSEL_SOE_1          SS=0   SOE=1
+Text GLabel 10350 5200 2    50   Input ~ 0
+SVCC
+$Comp
+L Device:R_Small R7
+U 1 1 6369783E
+P 5475 4150
+F 0 "R7" H 5534 4196 50  0000 L CNN
+F 1 "47k" H 5534 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5475 4150 50  0001 C CNN
+F 3 "~" H 5475 4150 50  0001 C CNN
+	1    5475 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 5575 3775 2    50   Input ~ 0
+SVCC
+Wire Wire Line
+	5475 4050 5475 3775
+Wire Wire Line
+	5475 3775 5575 3775
+$Comp
+L power:GND #PWR0104
+U 1 1 636A0972
+P 5475 4425
+F 0 "#PWR0104" H 5475 4175 50  0001 C CNN
+F 1 "GND" H 5480 4252 50  0000 C CNN
+F 2 "" H 5475 4425 50  0001 C CNN
+F 3 "" H 5475 4425 50  0001 C CNN
+	1    5475 4425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5475 4425 5475 4250
 $EndSCHEMATC

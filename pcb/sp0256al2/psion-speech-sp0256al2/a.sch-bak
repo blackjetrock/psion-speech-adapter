@@ -552,6 +552,8 @@ Wire Wire Line
 	3950 3225 3675 3225
 Text GLabel 3950 3725 0    50   Input ~ 0
 SOE
-Text GLabel 3950 3625 0    50   Input ~ 0
+Text GLabel 3200 3925 0    50   Input ~ 0
 SEL_SOE_0
+Text GLabel 3950 3625 0    50   Input ~ 0
+N_SS
 $EndSCHEMATC
