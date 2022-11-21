@@ -1,0 +1,7 @@
+Psion speech Adapter V1.1 errata
+================================
+
+1. ROM CE should go to SS not N_SS
+2. 47k resistor missed off SS pull up
+3. Need large capacitors on am[plifier supply
+

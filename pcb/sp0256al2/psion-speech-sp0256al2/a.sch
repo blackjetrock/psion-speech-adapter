@@ -553,5 +553,28 @@ Wire Wire Line
 Text GLabel 3950 3725 0    50   Input ~ 0
 SOE
 Text GLabel 3950 3625 0    50   Input ~ 0
-N_SS
+SS
+$Comp
+L Device:R_Small R10
+U 1 1 637B85F8
+P 6775 3575
+F 0 "R10" H 6834 3621 50  0000 L CNN
+F 1 "47k" H 6834 3530 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6775 3575 50  0001 C CNN
+F 3 "~" H 6775 3575 50  0001 C CNN
+	1    6775 3575
+	1    0    0    -1  
+$EndComp
+Text GLabel 6675 3325 0    50   Input ~ 0
+SVCC
+Wire Wire Line
+	6675 3325 6775 3325
+Wire Wire Line
+	6775 3325 6775 3475
+Wire Wire Line
+	6775 3750 6775 3675
+Text GLabel 6650 3750 0    50   Input ~ 0
+SS
+Wire Wire Line
+	6650 3750 6775 3750
 $EndSCHEMATC
