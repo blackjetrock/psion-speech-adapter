@@ -833,7 +833,7 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	1    0    0    -1  
 $EndComp
 Text Notes 9975 1150 0    50   ~ 0
-PB mounted speaker can be a\nwired sounder of\nsome other type.
+PCB mounted speaker can be a\nwired sounder or\nsome other type.
 $Comp
 L Connector:AudioJack2_Ground_Switch J2
 U 1 1 6343E58B
@@ -1135,8 +1135,8 @@ $Comp
 L Device:C_Small C16
 U 1 1 6383A013
 P 1300 2700
-F 0 "C16" H 1392 2746 50  0000 L CNN
-F 1 "C_Small" H 1392 2655 50  0000 L CNN
+F 0 "C16" H 900 2725 50  0000 L CNN
+F 1 "20uF" H 900 2625 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder" H 1300 2700 50  0001 C CNN
 F 3 "~" H 1300 2700 50  0001 C CNN
 	1    1300 2700

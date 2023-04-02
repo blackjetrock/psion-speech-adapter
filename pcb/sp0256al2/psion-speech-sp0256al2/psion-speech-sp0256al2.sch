@@ -260,7 +260,7 @@ L Device:C_Small C8
 U 1 1 6342A707
 P 8850 1950
 F 0 "C8" H 8942 1996 50  0000 L CNN
-F 1 "220pF" H 8942 1905 50  0000 L CNN
+F 1 "100nF" H 8942 1905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 8850 1950 50  0001 C CNN
 F 3 "~" H 8850 1950 50  0001 C CNN
 	1    8850 1950
@@ -271,7 +271,7 @@ L Device:C_Small C9
 U 1 1 6342AD96
 P 9375 1950
 F 0 "C9" H 9467 1996 50  0000 L CNN
-F 1 "220pF" H 9467 1905 50  0000 L CNN
+F 1 "100nF" H 9467 1905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 9375 1950 50  0001 C CNN
 F 3 "~" H 9375 1950 50  0001 C CNN
 	1    9375 1950
@@ -833,7 +833,7 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	1    0    0    -1  
 $EndComp
 Text Notes 9975 1150 0    50   ~ 0
-PB mounted speaker can be a\nwired sounder of\nsome other type.
+PCB mounted speaker can be a\nwired sounder or\nsome other type.
 $Comp
 L Connector:AudioJack2_Ground_Switch J2
 U 1 1 6343E58B
